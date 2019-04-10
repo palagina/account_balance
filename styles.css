@@ -1,0 +1,42 @@
+.myForm {
+    display: inline-flex;
+    margin-bottom: 30px;
+}
+
+.myForm > * {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.income { grid-area: income; }
+.expense { grid-area: expense; }
+.balance { grid-area: balance; }
+
+.grid-container {
+    width: 80%;
+    display: grid;
+    grid-template-areas:
+      'income expense'
+      'balance balance';
+    grid-gap: 10px;
+    background-color: lightgreen;
+    padding: 10px;
+    grid-auto-columns: 1fr;
+  }
+
+  .grid-container > * {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+
+  #addButton {
+    cursor: pointer;
+  }
+
+  .delete-icon {
+    font-size: 22px;
+    margin: 0 20px;
+    cursor: pointer;
+  }

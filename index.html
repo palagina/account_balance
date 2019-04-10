@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Account balance</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="script.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    
+
+<h2>Account balance</h2>
+<div class="myForm">
+    <input type="text" id="description" placeholder="Description" required>
+    <input type="number" id="amount" placeholder="Amount" required>
+    <select id="operationType">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+    </select>
+    <input id="addButton" type="submit" value="Add" onclick=addOperation()>
+</div>
+
+<div class="grid-container">
+    <div id="incomeList" class="income"><u>Income</u></div>
+    <div id="expenseList" class="expense"><u>Expense</u></div>
+    <div class="balance"><u>Balance</u>
+        <div id="balance">0€</div> 
+    </div>
+    
+</div>
+
+</body>
+</html>
